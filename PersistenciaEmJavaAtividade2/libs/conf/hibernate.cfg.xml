@@ -1,0 +1,20 @@
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:8889/Atividade2</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="hibernate.current_session_context_class">thread</property> 
+		
+		<!-- Mapeamento de Classes -->
+		<mapping class="fiap.atividade.persistencia.model.Pedido" />
+		<mapping class="fiap.atividade.persistencia.model.Cliente" />
+		
+		<!-- Arquivos de mapeamento -->
+		<!-- <mapping resource="Pessoa.hbm.xml" /> -->
+	</session-factory>
+</hibernate-configuration>
