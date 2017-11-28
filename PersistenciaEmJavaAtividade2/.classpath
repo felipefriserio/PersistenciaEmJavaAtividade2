@@ -13,6 +13,9 @@
 	<classpathentry kind="lib" path="libs/hibernate/javassist-3.20.0-GA.jar"/>
 	<classpathentry kind="lib" path="libs/hibernate/jboss-logging-3.3.0.Final.jar"/>
 	<classpathentry kind="lib" path="libs/hibernate/jboss-transaction-api_1.2_spec-1.0.1.Final.jar"/>
-	<classpathentry kind="lib" path="libs/mysql-connector-java-6.0.6.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate/ehCache/hibernate-ehcache-5.2.10.Final.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate/ehCache/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate/ehCache/ehcache-2.10.3.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.44-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
