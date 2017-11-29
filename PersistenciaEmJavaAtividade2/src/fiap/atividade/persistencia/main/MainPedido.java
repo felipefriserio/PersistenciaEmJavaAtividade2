@@ -25,7 +25,7 @@ public class MainPedido {
 		
 		// testa get
 		System.out.println("********** Testa GET **********");
-		Pedido pedido2 = pedidoDAO.get(1);
+		Pedido pedido2 = pedidoDAO.get(2);
 		System.out.println(pedido2.toString());
 		
 		// testa lista pedidos
