@@ -10,7 +10,9 @@ import fiap.atividade.persistencia.model.Pedido;
 
 public class MainPedido {
 	public static void main(String[] args) {
-		Cliente cliente = new ClienteDAO().get(2);
+		int idCliente = 1;
+		
+		Cliente cliente = new ClienteDAO().get(idCliente);
 		Pedido pedido = new Pedido(cliente, 
 								   Calendar.getInstance(),
 								   "descricao", 
@@ -23,12 +25,12 @@ public class MainPedido {
 		
 		// testa get
 		System.out.println("********** Testa GET **********");
-		Pedido pedido2 = pedidoDAO.get(2);
+		Pedido pedido2 = pedidoDAO.get(1);
 		System.out.println(pedido2.toString());
 		
 		// testa lista pedidos
 		System.out.println("********** Testa lista Pedidos do cliente **********");
-		List<Pedido> listaDePedidosDoCliente = new PedidoDAO().listaPedidosDoCliente(2);
+		List<Pedido> listaDePedidosDoCliente = new PedidoDAO().listaPedidosDoCliente(idCliente);
 			for (Pedido pedidoDoCliente : listaDePedidosDoCliente) {
 				System.out.println(pedidoDoCliente.toString());
 			}
